@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>865</width>
-    <height>653</height>
+    <height>654</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -389,6 +389,9 @@ Poderzinhos:
         <pointsize>20</pointsize>
        </font>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 229, 26);
 border-color: rgb(163, 159, 32);
@@ -414,6 +417,9 @@ color: rgb(255, 255, 255);</string>
         <pointsize>20</pointsize>
        </font>
       </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 229, 26);
 border-color: rgb(163, 159, 32);
@@ -438,6 +444,9 @@ color: rgb(255, 255, 255);</string>
         <family>MS Serif</family>
         <pointsize>20</pointsize>
        </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(255, 229, 26);
@@ -484,14 +493,14 @@ color: rgb(255, 255, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>HP: 1000</string>
+       <string>HP: 107</string>
       </property>
      </widget>
      <widget class="QLabel" name="labelPersonagemJogador">
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>180</y>
+        <y>230</y>
         <width>351</width>
         <height>331</height>
        </rect>
@@ -500,7 +509,7 @@ color: rgb(255, 255, 255);</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>imgs/charizardBack.webp</pixmap>
+       <pixmap>imgs/psyduckBack.webp</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -509,7 +518,7 @@ color: rgb(255, 255, 255);</string>
      <widget class="QLabel" name="labelHPJogador">
       <property name="geometry">
        <rect>
-        <x>210</x>
+        <x>130</x>
         <y>180</y>
         <width>111</width>
         <height>31</height>
@@ -522,7 +531,7 @@ color: rgb(255, 255, 255);</string>
        </font>
       </property>
       <property name="text">
-       <string>HP: 1000</string>
+       <string>HP: </string>
       </property>
      </widget>
      <widget class="QLabel" name="label_16">
@@ -563,6 +572,41 @@ color: rgb(255, 255, 255);</string>
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>501</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>imgs/chat.jpg</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelChat">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>481</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
      <zorder>label_16</zorder>
      <zorder>labelPersonagemJogador</zorder>
      <zorder>label_4</zorder>
@@ -573,6 +617,8 @@ color: rgb(255, 255, 255);</string>
      <zorder>pushButtonGolpeMedio</zorder>
      <zorder>pushButtonGolpeFraco</zorder>
      <zorder>label_3</zorder>
+     <zorder>label_7</zorder>
+     <zorder>labelChat</zorder>
     </widget>
     <widget class="QWidget" name="fim">
      <widget class="QLabel" name="label_6">
