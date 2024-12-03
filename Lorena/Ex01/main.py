@@ -10,17 +10,17 @@ class main_nota(QMainWindow):
         
         self.ui.pushButtonEnviar.clicked.connect(self.saberNota)
         
-        def saberNota(self):
-            nota = int(self.ui.lineEditNumero1.text())
-            
-            if nota >= 90:
-                self.ui.labelResultado.setText("Exelente")
-            elif 70 <= nota or nota < 90:
-                self.ui.labelResultado.setText("Bom")
-            elif 50 <= nota or nota < 70:
-                self.ui.labelResultado.setText("Regular")
-            elif nota < 50:
-                self.ui.labelResultado.setText("Insuficiente")
+    def saberNota(self):
+        nota = int(self.ui.lineEdit.text())
+        
+        if nota >= 90:
+            self.ui.labelResultado.setText("Excelente")
+        elif nota >= 70:
+            self.ui.labelResultado.setText("Bom")
+        elif nota >= 50:
+            self.ui.labelResultado.setText("Regular")
+        elif nota < 50:
+            self.ui.labelResultado.setText("Insuficiente")
         
         
 if __name__ == "__main__":
