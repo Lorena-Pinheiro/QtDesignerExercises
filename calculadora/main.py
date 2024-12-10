@@ -19,13 +19,13 @@ class Calculadora(QMainWindow):
         self.ui.oitoButton.clicked.connect(lambda: self.apertarBotao("8"))
         self.ui.noveButton.clicked.connect(lambda: self.apertarBotao("9"))
         
-        # self.ui.maisButton.clicked.connect(self.mais)
-        # self.ui.menosButton.clicked.connect(self.menos)
-        # self.ui.vezesButton.clicked.connect(self.vezes)
-        # self.ui.divisaoButton.clicked.connect(self.divisao)
-        # self.ui.igualButton.clicked.connect(self.igual)
+        self.ui.maisButton.clicked.connect(self.operacao)
+        self.ui.menosButton.clicked.connect(self.menos)
+        self.ui.vezesButton.clicked.connect(self.vezes)
+        self.ui.divisaoButton.clicked.connect(self.divisao)
+        self.ui.igualButton.clicked.connect(self.igual)
         
-        # self.ui.clearButton.clicked.connect(self.clear)
+        self.ui.clearButton.clicked.connect(self.clear)
 
         self.current_input = ""  
         self.operation = None   
@@ -33,6 +33,9 @@ class Calculadora(QMainWindow):
 
     def apertarBotao(self, pressed):
         self.outputLabel.setText(pressed)
+        
+    def ():
+        
     
         
 if __name__ == "__main__":
