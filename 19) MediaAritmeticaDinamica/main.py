@@ -53,30 +53,6 @@ class main_mediaAritmeticaDinamica(QMainWindow):
         else:
             self.ui.labelResultado.setText(f"Digite mais {self.n - len(self.notas)} notas.")
         
-    # def mediaAritmeticaDinamica(self):
-    #     try:
-    #         n = int(self.ui.lineEditInput.text())
-    #     except:
-    #         self.ui.labelResultado.setText("Digite um número válido")
-    #         return
-        
-    #     for i in range(n):
-    #         self.ui.labelResultado.clear()
-    #         self.ui.lineEditInput.clear()
-    #         x = n - (n+1)
-    #         self.ui.labelPergunta.setText(f"Informe a {x}° nota: ")
-    #         try:
-    #             n2 = int(self.ui.lineEditInput.text())
-    #         except:
-    #             self.ui.labelResultado.setText("Digite um número válido")
-    #             return
-    #         self.notas.append(n2)
-    #         i = i+1
-            
-    #     media = sum(self.notas)/n
-    #     self.ui.labelResultado.setText(f"A média é {media}")
-        
-        
         
 if __name__ == "__main__":
     app = QApplication(sys.argv)
