@@ -8,18 +8,23 @@ class main_maiorNumero10(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         
-        self.ui.pushButtonEnviar.clicked.connect(self.maiorNumero10)
-        self.numbers = []  
-        self.counter = 0   
+        self.ui.pushButtonMostrar.clicked.connect(self.maiorNumero10)
+        self.numeros = []  
+        self.i = 0   
 
     def maiorNumero10(self):
-        if self.counter < 10:
-            n = int(self.ui.lineEditNumber.text())
-            self.numbers.append(n)
-            self.counter += 1
-            self.ui.lineEditNumber.clear()
-            if self.counter == 10:
-                max_number = max(self.numbers)
+        if self.i < 10:
+            try:
+                n = int(self.ui.lineEditNumero1.text())
+            except:
+                self.ui.labelResultado.setText("Digite um número válido")
+                return
+            self.ui.labelResultado.setText("Número enviado com sucesso. Digite o próximo")
+            self.numeros.append(n)
+            self.i += 1
+            self.ui.lineEditNumero1.clear()
+            if self.i == 10:
+                max_number = max(self.numeros)
                 self.ui.labelResultado.setText(f"O maior número digitado é {max_number}")
             
         

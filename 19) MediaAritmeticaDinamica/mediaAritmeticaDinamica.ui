@@ -14,13 +14,34 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButtonMostrar">
+   <widget class="QLabel" name="labelPergunta">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>140</y>
+      <width>291</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Digite o número de notas a serem inseridas:</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonEnviar">
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>90</y>
-      <width>201</width>
-      <height>41</height>
+      <y>240</y>
+      <width>171</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -35,31 +56,23 @@
      <string>Return</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLineEdit" name="lineEditInput">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>20</y>
-      <width>551</width>
-      <height>51</height>
+      <x>390</x>
+      <y>170</y>
+      <width>311</width>
+      <height>41</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Informe 10 números para saber qual é maior:</string>
     </property>
    </widget>
    <widget class="QLabel" name="labelResultado">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>200</y>
-      <width>521</width>
-      <height>211</height>
+      <x>80</x>
+      <y>320</y>
+      <width>631</width>
+      <height>181</height>
      </rect>
     </property>
     <property name="font">
@@ -77,14 +90,22 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEditNumero1">
+   <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>90</y>
-      <width>291</width>
-      <height>41</height>
+      <x>290</x>
+      <y>30</y>
+      <width>221</width>
+      <height>61</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Média Aritmética</string>
     </property>
    </widget>
   </widget>
