@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'calculadora.ui'
+# Form implementation generated from reading ui file 'Calculadora.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -30,7 +30,7 @@ class Ui_MainWindow(object):
         self.outputLabel.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.outputLabel.setObjectName("outputLabel")
         self.clearButton = QtWidgets.QPushButton(self.centralwidget)
-        self.clearButton.setGeometry(QtCore.QRect(10, 150, 101, 81))
+        self.clearButton.setGeometry(QtCore.QRect(10, 150, 231, 81))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
         font.setPointSize(25)
@@ -65,17 +65,8 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.umButton.setFont(font)
         self.umButton.setObjectName("umButton")
-        self.porcentagemButton = QtWidgets.QPushButton(self.centralwidget)
-        self.porcentagemButton.setGeometry(QtCore.QRect(270, 150, 101, 81))
-        font = QtGui.QFont()
-        font.setFamily("Arial Black")
-        font.setPointSize(25)
-        font.setBold(True)
-        font.setWeight(75)
-        self.porcentagemButton.setFont(font)
-        self.porcentagemButton.setObjectName("porcentagemButton")
         self.eraseButton = QtWidgets.QPushButton(self.centralwidget)
-        self.eraseButton.setGeometry(QtCore.QRect(140, 150, 101, 81))
+        self.eraseButton.setGeometry(QtCore.QRect(270, 150, 101, 81))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
         font.setPointSize(25)
@@ -220,7 +211,6 @@ class Ui_MainWindow(object):
         self.seteButton.setText(_translate("MainWindow", "7"))
         self.quatroButton.setText(_translate("MainWindow", "4"))
         self.umButton.setText(_translate("MainWindow", "1"))
-        self.porcentagemButton.setText(_translate("MainWindow", "%"))
         self.eraseButton.setText(_translate("MainWindow", "<--"))
         self.divisaoButton.setText(_translate("MainWindow", "/"))
         self.cincoButton.setText(_translate("MainWindow", "5"))

@@ -19,22 +19,46 @@ class Calculadora(QMainWindow):
         self.ui.oitoButton.clicked.connect(lambda: self.apertarBotao("8"))
         self.ui.noveButton.clicked.connect(lambda: self.apertarBotao("9"))
         
-        self.ui.maisButton.clicked.connect(self.operacao)
-        self.ui.menosButton.clicked.connect(self.menos)
-        self.ui.vezesButton.clicked.connect(self.vezes)
-        self.ui.divisaoButton.clicked.connect(self.divisao)
-        self.ui.igualButton.clicked.connect(self.igual)
+        self.ui.maisButton.clicked.connect(lambda: self.operacao("+"))
+        self.ui.menosButton.clicked.connect(lambda: self.operacao("-"))
+        self.ui.vezesButton.clicked.connect(lambda: self.operacao("*"))
+        self.ui.divisaoButton.clicked.connect(lambda: self.operacao("/"))
         
+        self.ui.igualButton.clicked.connect(self.igual)
         self.ui.clearButton.clicked.connect(self.clear)
 
-        self.current_input = ""  
-        self.operation = None   
-        self.first_number = None
-
-    def apertarBotao(self, pressed):
-        self.outputLabel.setText(pressed)
+        self.inputAtual = ""  
+        self.simbolo = None   
+        self.num1 = None
         
-    def ():
+        self.lista = []
+
+    def apertarBotao(self, numero):
+        self.inputAtual += numero
+        self.lista.append(self.inputAtual)
+        self.ui.outputLabel.setText(' '.join(self.lista))
+        
+    def operacao(self, op):
+        self.num1 = float(self.inputAtual)
+        self.simbolo = op
+        self.inputAtual = ""
+        self.lista.append(f" {self.simbolo}")
+        self.ui.outputLabel.setText(' '.join(self.lista))
+    
+    def igual(self):
+        self.num2 = self.inputAtual
+        self.lista.append(f" {self.num2}")
+        self.ui.outputLabel.setText(' '.join(self.lista))
+        
+        resultado = float(eval(' '.join(self.lista)))
+        self.ui.outputLabel.setText(resultado)
+        
+    def clear(self):
+        self.inputAtual = ""
+        self.num1 = None
+        self.simbolo = None
+        self.ui.outputLabel.setText("0")
+        
         
     
         
@@ -43,3 +67,4 @@ if __name__ == "__main__":
     window = Calculadora()
     window.show()
     sys.exit(app.exec_())
+    
