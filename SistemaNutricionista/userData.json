@@ -1,33 +1,5 @@
 [
     {
-        "nome": "teste",
-        "idade": "34",
-        "peso": "54",
-        "altura": "176",
-        "objetivo": "teste"
-    },
-    {
-        "nome": "teste",
-        "idade": "34",
-        "peso": "54",
-        "altura": "176",
-        "objetivo": "teste"
-    },
-    {
-        "nome": "teste",
-        "idade": "34",
-        "peso": "54",
-        "altura": "176",
-        "objetivo": "teste"
-    },
-    {
-        "nome": "teste",
-        "idade": "34",
-        "peso": "54",
-        "altura": "176",
-        "objetivo": "teste"
-    },
-    {
         "nome": "",
         "idade": "",
         "peso": "",
@@ -35,10 +7,24 @@
         "objetivo": ""
     },
     {
-        "nome": "teste1",
-        "idade": "12",
-        "peso": "12",
-        "altura": "12",
-        "objetivo": "teste1"
+        "nome": "teste",
+        "idade": "teste",
+        "peso": "teste",
+        "altura": "teste",
+        "objetivo": "teste"
+    },
+    {
+        "nome": "pedru'",
+        "idade": "todos",
+        "peso": "190",
+        "altura": "27",
+        "objetivo": "vencer na vida "
+    },
+    {
+        "nome": "Pedru",
+        "idade": "29",
+        "peso": "todos",
+        "altura": "190",
+        "objetivo": "vencer "
     }
 ]
